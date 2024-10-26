@@ -13,7 +13,7 @@ body {
     z-index: 1000; /* Asegura que el menú esté siempre arriba */
 }
 .menu a {
-    padding: 15px 20px;
+    padding: 35px 20px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -44,4 +44,21 @@ body {
 .inicio h1 {
     font-size: 3em;
     margin: 0;
+}
+
+
+.caracteristicas {
+    background-color: #8fc0d3; 
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caracteristicas p {
+    margin: 0;
+    padding: 15px;
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.4em; 
+    color: #333; 
 }
