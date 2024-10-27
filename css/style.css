@@ -95,5 +95,17 @@ body {
 
 .eslogan b {
     font-family: 'Pacifico', cursive;
-    /* Fuente más atractiva para el texto en negrita */
+    border-bottom: #8fc0d3 solid 5px; 
+    padding: 5px 100px;
+
+
 }
+/* .eslogan b::after {
+    content: ''; 
+    position: absolute;
+    left: 35%; 
+    right: 35%; 
+    bottom: -10px;
+    border-bottom: #8fc0d3 solid 5px; 
+
+} */
