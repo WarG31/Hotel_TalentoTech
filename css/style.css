@@ -1,17 +1,22 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: mintcream;
 }
+
 .menu {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(219, 251, 255, 0.8); /* Fondo transparente */
+    background: rgba(219, 251, 255, 0.5);
+    /* Fondo transparente */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    z-index: 1000; /* Asegura que el menú esté siempre arriba */
+    z-index: 1000;
+    /* Asegura que el menú esté siempre arriba */
 }
+
 .menu a {
     padding: 35px 20px;
     text-decoration: none;
@@ -19,6 +24,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .menu a:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -28,13 +34,17 @@ body {
     background-size: cover;
     background-position: center;
     padding-top: 60px;
-    height: 50vh; 
+    height: 50vh;
     color: white;
     text-shadow:
-    1px 0 0 black,    /* Desplaza a la derecha */
-    -1px 0 0 black,   /* Desplaza a la izquierda */
-    0 1px 0 black,    /* Desplaza abajo */
-    0 -1px 0 black;   /* Desplaza arriba */
+        1px 0 0 black,
+        /* Desplaza a la derecha */
+        -1px 0 0 black,
+        /* Desplaza a la izquierda */
+        0 1px 0 black,
+        /* Desplaza abajo */
+        0 -1px 0 black;
+    /* Desplaza arriba */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,17 +58,42 @@ body {
 
 
 .caracteristicas {
-    background-color: #8fc0d3; 
+    background-color: #8fc0d3;
     padding: 10px 0;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row; /* Cambia la dirección de flex a columna */
+    align-items: center; /* Centra los items horizontalmente */
+    
 }
 
 .caracteristicas p {
     margin: 0;
-    padding: 15px;
-    font-family: 'Playfair Display', serif; 
-    font-size: 1.4em; 
-    color: #333; 
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #333;
+      
+
+}
+
+.caracteristicas img {
+    width: 40px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 40px;
+    margin-right: 10px 
+ 
+}
+.eslogan {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 140px auto;
+    font-family: 'Pacifico';
+    font-size: 1.2em;
+}
+
+.eslogan b {
+    font-family: 'Pacifico', cursive;
+    /* Fuente más atractiva para el texto en negrita */
 }
