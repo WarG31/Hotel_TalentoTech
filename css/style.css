@@ -98,11 +98,27 @@ body {
 
 .eslogan b {
     font-family: 'Pacifico', cursive;
-    border-bottom: #8fc0d3 solid 5px;
-    padding: 5px 100px;
-
-
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Añade un poco de espacio bajo el texto */
 }
+
+.eslogan b { 
+    font-family: 'Pacifico', cursive; border-bottom: #8fc0d3 solid 4px; 
+    border-radius: 10px; 
+}
+
+/* .eslogan b::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: calc(80% - 80px); 
+    border-bottom: #8fc0d3 solid 4px;
+    
+} */
+
 
 
 /* .eslogan b::after {
@@ -143,7 +159,7 @@ body {
     transition: transform 0.3s;
 }
 
-.grid-item:hover img, .grid-item .text:hover ~ img { 
+.grid-item:hover img, .grid-item .text:hover ~ img {   /*Aplica Zoom combinando selectores*/
     transform: scale(1.1); 
     transition: transform 0.8s; 
 }
