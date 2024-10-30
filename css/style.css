@@ -129,6 +129,11 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     text-align: center;
+    z-index: 1;
+    
+}
+.grid-item:hover { 
+    z-index: 10; /* Asegura que el contenedor tenga un nivel superior durante el hover */ 
 }
 
 .grid-item img {
@@ -138,10 +143,11 @@ body {
     transition: transform 0.3s;
 }
 
-.grid-item img:hover {
-    transform: scale(1.1);
-    transition: transform 0.8s;
+.grid-item:hover img, .grid-item .text:hover ~ img { 
+    transform: scale(1.1); 
+    transition: transform 0.8s; 
 }
+
 
 .grid-item .text {
     position: absolute;
@@ -163,11 +169,16 @@ body {
     /* Desplaza abajo */
     0 -1px 0 black;
 /* Desplaza arriba */
+    transition: 0.8s;
 
 
 }
 
+.grid-item .text:hover, .grid-item:hover .text { 
+    transform: translate(-50%, -50%) scale(1.2); /* Aplica Zoom para texto*/
+    transition: transform 0.8s; 
+}
+
 /* .grid-item img:hover + .text {
     font-size: 48px; 
-   
 } */
