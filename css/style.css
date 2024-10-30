@@ -104,7 +104,8 @@ body {
 }
 
 .eslogan b { 
-    font-family: 'Pacifico', cursive; border-bottom: #8fc0d3 solid 4px; 
+    font-family: 'Pacifico', cursive; 
+    border-bottom: #8fc0d3 solid 4px; 
     border-radius: 10px; 
 }
 
@@ -195,6 +196,15 @@ body {
     transition: transform 0.8s; 
 }
 
+.grid-item a {
+  
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+.grid-container a:hover {
+    color: #3498db;
+}
 /* .grid-item img:hover + .text {
     font-size: 48px; 
 } */
