@@ -63,9 +63,11 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row; /* Cambia la dirección de flex a columna */
-    align-items: center; /* Centra los items horizontalmente */
-    
+    flex-direction: row;
+    /* Cambia la dirección de flex a columna */
+    align-items: center;
+    /* Centra los items horizontalmente */
+
 }
 
 .caracteristicas p {
@@ -73,16 +75,17 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.4em;
     color: #333;
-      
+
 
 }
 
 .caracteristicas img {
-    width: 40px; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    width: 40px;
+    /* Ajusta el tamaño de las imágenes según tus necesidades */
     height: 40px;
-    margin-right: 10px 
- 
+    margin-right: 10px
 }
+
 .eslogan {
     justify-content: center;
     align-items: center;
@@ -95,7 +98,7 @@ body {
 
 .eslogan b {
     font-family: 'Pacifico', cursive;
-    border-bottom: #8fc0d3 solid 5px; 
+    border-bottom: #8fc0d3 solid 5px;
     padding: 5px 100px;
 
 
@@ -119,21 +122,52 @@ body {
     justify-content: center;
 
 
-  }
-  .grid-item {
+}
+
+.grid-item {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.8);
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     text-align: center;
-  }
+}
 
-  .grid-item img {
+.grid-item img {
     width: 50%;
     height: 100%;
-    width:  fit-content;        
-    transition: transform 0.3s; 
-  }
-
-  .grid-item img:hover {
-    transform: scale(1.1); 
-    transition: transform 0.8s; 
+    width: fit-content;
+    transition: transform 0.3s;
 }
+
+.grid-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.8s;
+}
+
+.grid-item .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    text-shadow:
+    1px 0 0 black,
+    /* Desplaza a la derecha */
+    -1px 0 0 black,
+    /* Desplaza a la izquierda */
+    0 1px 0 black,
+    /* Desplaza abajo */
+    0 -1px 0 black;
+/* Desplaza arriba */
+
+
+}
+
+/* .grid-item img:hover + .text {
+    font-size: 48px; 
+   
+} */
