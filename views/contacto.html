@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotelParaisoReal</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#reserva">Reserva</a>
+    </div>
+
+    <div id="inicio" class="inicio">
+      <h1>¿Tienes alguna pregunta? ¡Contactanos!</h1>
+    </div>
+    <div id="caracteristicas" class="caracteristicas">
+      <p><img src="../images/todo-incluido.png" class="icon" />Todo incluido</p>
+      <p><img src="../images/focos.png" class="icon" />Shows Nocturnos</p>
+      <p><img src="../images/nadando.png" class="icon" />Piscina</p>
+      <p>
+        <img src="../images/puesta-de-sol.png" class="icon" />Habitaciones vista
+        al mar
+      </p>
+    </div>
+    <div class="formularioContenedor">
+      <form
+        action="mailto:talentotechgrupo10@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div>
+          <label for="name">Nombre:</label>
+          <br /><input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+          <label for="mail">Correo electrónico:</label>
+          <br /><input type="email" id="mail" name="user_email" />
+        </div>
+        <div>
+          <label for="msg">Mensaje:</label>
+          <br />
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Envia tu mensaje</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
