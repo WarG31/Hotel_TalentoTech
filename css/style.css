@@ -265,7 +265,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 16px;
-    
   }
   
   button:hover {
@@ -275,4 +274,10 @@ button {
   button:active {
     background-color: #3e8e41;
   }
-  
+  label{
+    color:  #3498db;
+  }
+
+  .formelement{
+    margin-top: 8px;
+  }
