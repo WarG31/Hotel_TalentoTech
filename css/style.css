@@ -160,23 +160,14 @@ body {
     width: 50%;
     height: 100%;
     width: fit-content;
-    transition: transform 0.5s;
-
-
-}
-
-.grid-item:hover {
-    z-index: 1; /* Asegura que el contenedor esté encima de las otras imágenes */
+    transition: transform 0.3s;
 }
 
 .grid-item:hover img,
 .grid-item .text:hover~img {
     /*Aplica Zoom combinando selectores*/
     transform: scale(1.1);
-    z-index: 10;
     transition: transform 0.8s;
-
-
 }
 
 
