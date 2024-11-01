@@ -98,11 +98,29 @@ body {
 
 .eslogan b {
     font-family: 'Pacifico', cursive;
-    border-bottom: #8fc0d3 solid 5px;
-    padding: 5px 100px;
-
-
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    /* Añade un poco de espacio bajo el texto */
 }
+
+.eslogan b {
+    font-family: 'Pacifico', cursive;
+    border-bottom: #8fc0d3 solid 4px;
+    border-radius: 10px;
+}
+
+/* .eslogan b::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: calc(80% - 80px); 
+    border-bottom: #8fc0d3 solid 4px;
+    
+} */
+
 
 
 /* .eslogan b::after {
@@ -129,7 +147,13 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     /* border: 1px solid rgba(0, 0, 0, 0.8); */
     text-align: center;
+    z-index: 1;
 
+}
+
+.grid-item:hover {
+    z-index: 10;
+    /* Asegura que el contenedor tenga un nivel superior durante el hover */
 }
 
 .grid-item img {
@@ -145,13 +169,16 @@ body {
     z-index: 1; /* Asegura que el contenedor esté encima de las otras imágenes */
 }
 
-.grid-item img:hover {
+.grid-item:hover img,
+.grid-item .text:hover~img {
+    /*Aplica Zoom combinando selectores*/
     transform: scale(1.1);
     z-index: 10;
     transition: transform 0.8s;
 
 
 }
+
 
 .grid-item .text {
     position: absolute;
@@ -173,6 +200,93 @@ body {
         /* Desplaza abajo */
         0 -1px 0 black;
     /* Desplaza arriba */
+    transition: 0.8s;
 
 
 }
+
+.grid-item .text:hover,
+.grid-item:hover .text {
+    transform: translate(-50%, -50%) scale(1.2);
+    /* Aplica Zoom para texto*/
+    transition: transform 0.8s;
+}
+
+.grid-item a {
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.grid-container a:hover {
+    color: #3498db;
+}
+
+/* .grid-item img:hover + .text {
+    font-size: 48px; 
+} */
+
+
+/*Estilo para elementos del la página contacto */
+
+.formularioContenedor {
+    border: #3498db solid 1px;
+    width: 100%;
+    max-width: 600px;
+    /* Ajusta este valor según necesites */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+
+    margin: 16px auto;
+    /* Centra el contenedor y ajusta el margen */
+    padding: 16px;
+    /* Agrega un padding para mayor espacio interno */
+    box-sizing: border-box;
+    /* Asegura que padding y border se incluyan en el width */
+}
+
+input,
+textarea {
+    /* To make sure that all text field have the same font settings
+     By default, textarea are set with a monospace font */
+    font: 1em Arial, sans-serif;
+    /* To give the same size to all text field */
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 2px solid #999;
+    padding: 8px;
+    /* margin: 8px; */
+}
+
+textarea {
+    height: 300px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  label{
+    color:  #3498db;
+  }
+
+  .formelement{
+    margin-top: 8px;
+  }
