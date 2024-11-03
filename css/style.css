@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -220,64 +224,84 @@ body {
 
 /*Estilo para elementos del la página contacto */
 
-.formularioContenedor {
-    border: #3498db solid 1px;
-    width: 100%;
-    max-width: 600px;
-    /* Ajusta este valor según necesites */
+.contenido {
+    margin-top: 140px;
+}
+
+.habitacionesbody {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+    /* border: 1px solid; */
 
-    margin: 16px auto;
-    /* Centra el contenedor y ajusta el margen */
-    padding: 16px;
-    /* Agrega un padding para mayor espacio interno */
-    box-sizing: border-box;
-    /* Asegura que padding y border se incluyan en el width */
 }
 
-input,
-textarea {
-    /* To make sure that all text field have the same font settings
-     By default, textarea are set with a monospace font */
-    font: 1em Arial, sans-serif;
-    /* To give the same size to all text field */
-    width: 500px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* To harmonize the look & feel of text field border */
-    border: 2px solid #999;
-    padding: 8px;
-    /* margin: 8px; */
+.habitacion {
+    display: flex;
+    /* border: 5px solid; */
+    background-color: #8fc0d3;
+    align-items: center;
+    margin: 8px;
+    
+}
+.habitacionizquierda {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+
 }
 
-textarea {
-    height: 300px;
+.habitacionderecha {
+    /* padding: 10px; */
+    text-align: center;
+    /* border: 1px solid; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
-button {
-    padding: 8px 16px;
-    background-color: #4CAF50;
+.textoHabitacion{
+    transition: 0.5s;
+}
+
+  .habitacion:hover .textoHabitacion {
+    transform: translateY(-20%); /* Mueve hacia arriba */
+    transition: transform 0.5s;
+}
+
+.botonHabitacion{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.habitacion:hover .textoHabitacion ~ .botonHabitacion{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.boton {
+    background-color: #3cba54;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
     cursor: pointer;
-    margin-top: 16px;
-  }
-  
-  button:hover {
+}
+
+.boton:hover {
     background-color: #45a049;
   }
   
-  button:active {
+  .boton:active {
     background-color: #3e8e41;
-  }
-  label{
-    color:  #3498db;
-  }
-
-  .formelement{
-    margin-top: 8px;
   }

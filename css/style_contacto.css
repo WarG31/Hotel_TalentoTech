@@ -1,0 +1,154 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: mintcream;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(219, 251, 255, 0.5);
+    /* Fondo transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    /* Asegura que el menú esté siempre arriba */
+}
+
+.menu a {
+    padding: 35px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inicio {
+    background-image: url('../images/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    height: 50vh;
+    color: white;
+    text-shadow:
+        1px 0 0 black,
+        /* Desplaza a la derecha */
+        -1px 0 0 black,
+        /* Desplaza a la izquierda */
+        0 1px 0 black,
+        /* Desplaza abajo */
+        0 -1px 0 black;
+    /* Desplaza arriba */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+
+.caracteristicas {
+    background-color: #8fc0d3;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* Cambia la dirección de flex a columna */
+    align-items: center;
+    /* Centra los items horizontalmente */
+
+}
+
+.caracteristicas p {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    color: #333;
+
+
+}
+
+.caracteristicas img {
+    width: 40px;
+    /* Ajusta el tamaño de las imágenes según tus necesidades */
+    height: 40px;
+    margin-right: 10px
+}
+
+
+.formularioContenedor {
+    border: #3498db solid 1px;
+    width: 100%;
+    max-width: 600px;
+    /* Ajusta este valor según necesites */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+
+    margin: 16px auto;
+    /* Centra el contenedor y ajusta el margen */
+    padding: 16px;
+    /* Agrega un padding para mayor espacio interno */
+    box-sizing: border-box;
+    /* Asegura que padding y border se incluyan en el width */
+}
+
+input,
+textarea {
+    /* To make sure that all text field have the same font settings
+     By default, textarea are set with a monospace font */
+    font: 1em Arial, sans-serif;
+    /* To give the same size to all text field */
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* To harmonize the look & feel of text field border */
+    border: 2px solid #999;
+    padding: 8px;
+    /* margin: 8px; */
+}
+
+textarea {
+    height: 300px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  label{
+    color:  #3498db;
+  }
+
+  .formelement{
+    margin-top: 8px;
+  }
