@@ -97,7 +97,7 @@ body {
     width: 50%;
     margin: 140px auto;
     font-family: 'Pacifico';
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .eslogan b {
@@ -214,7 +214,7 @@ body {
 }
 
 .grid-container a:hover {
-    color: #3498db;
+    color: #8fc0d3;
 }
 
 /* .grid-item img:hover + .text {
@@ -296,6 +296,7 @@ body {
     font-size: 16px;
     margin: 1px 1px;
     cursor: pointer;
+    /* border-radius: 20px; */
 }
 
 .boton:hover {
