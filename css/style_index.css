@@ -271,7 +271,7 @@ body {
 }
 
   .habitacion:hover .textoHabitacion {
-    transform: translateY(-20%); /* Mueve hacia arriba */
+    transform: translateY(-10%); /* Mueve hacia arriba */
     transition: transform 0.5s;
 }
 
