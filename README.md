@@ -1,1 +1,3 @@
 # Hotel_TalentoTech
+
+Este proyecto ha sido creado con fines meramente educativos, gracias al programa Talento Tech. Todo el contenido utilizado en este proyecto es con intenciones de aprendizaje y educación. Las imágenes fueron tomadas de internet con este propósito. No se tiene ninguna intención de generar ingresos ni lucro de ningún tipo con este proyecto. Todo el contenido y el nombre del hotel son inventados.
