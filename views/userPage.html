@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de Usuario</title>
+    <link rel="stylesheet" href="../public/style_userPage.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a href="./index.html">Inicio</a>
+        <a href="./habitaciones.html">Habitaciones</a>
+        <a href="#servicios">Servicios</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="#loginForm">Reserva</a>
+        <a href="./agradecimiento.html">Agradecimientos</a>
+      </div>
+    
+      <div id="inicio" class="inicio">
+        <!-- <h1>Inicia sesión para reservar la habitación</h1> -->
+        <h1>Bienvenido <span id="welcomeUser">Usuario</span></h1>
+      </div>
+      <div id="caracteristicas" class="caracteristicas">
+        <p><img src="../images/todo-incluido.png" class="icon" />Todo incluido</p>
+        <p><img src="../images/focos.png" class="icon" />Shows Nocturnos</p>
+        <p><img src="../images/nadando.png" class="icon" />Piscina</p>
+        <p>
+          <img src="../images/puesta-de-sol.png" class="icon" />Habitaciones vista
+          al mar
+        </p>
+      </div>
+
+
+    
+    <!-- <h1>Bienvenido <span id="welcomeUser">Usuario</span></h1> -->
+    <div class="formularioContenedor" id="formularioContenedor">
+    <form id="reservar">
+      <br>
+      <label for="roomType"> Seleccione la habitacion que desea reservar</label><br>
+        <select name="roomType" id="roomType" required>
+            <option value="sencilla">Sencilla</option>
+            <option value="doble">Doble</option>
+            <option value="familiar">Familiar</option>
+        </select> <br>
+        <button type="button" id="reservationBtn">Reservar</button>
+        <button id="logoutButton">Cerrar Sesión</button>
+    </form>
+    </div>
+    <div class="message"></div>
+    
+
+  
+    <ul class="habitacionesLista" id="habitacionesLista">
+    
+    </ul>
+
+    <script src="../public/scripts_userPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="../public/style_signIn.css">
+</head>
+
+<body>
+
+  <div class="menu">
+    <a href="./index.html">Inicio</a>
+    <a href="./habitaciones.html">Habitaciones</a>
+    <a href="#servicios">Servicios</a>
+    <a href="./contacto.html">Contacto</a>
+    <a href="#loginForm">Reserva</a>
+    <a href="./agradecimiento.html">Agradecimientos</a>
+  </div>
+
+  <div id="inicio" class="inicio">
+    <h1>Inicia sesión para reservar la habitación</h1>
+  </div>
+  <div id="caracteristicas" class="caracteristicas">
+    <p><img src="../images/todo-incluido.png" class="icon" />Todo incluido</p>
+    <p><img src="../images/focos.png" class="icon" />Shows Nocturnos</p>
+    <p><img src="../images/nadando.png" class="icon" />Piscina</p>
+    <p>
+      <img src="../images/puesta-de-sol.png" class="icon" />Habitaciones vista
+      al mar
+    </p>
+  </div>
+  <div class="formularioContenedor">
+
+    <h1>Inicio de sesión</h1>
+    <form id="loginForm">
+      <div class="formelement">
+        <label for="email">Correo electrónico:</label>
+        <br /><input type="email" id="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="formelement">
+        <label for="password">Correo electrónico:</label>
+        <br /><input type="password" id="password" placeholder="Contraseña" required>
+      </div>
+      <button type="submit">Ingresar</button>
+      <a href="./register.html" class="boton">Registrarse</a>      
+      
+    </form>
+      <!-- <div id="boton" class="boton">
+      ¿No tienes cuenta?, registrate para reservar habitación<a href="./register.html" class="button">Registrarse</a>
+     </div> -->
+     <!-- ¿No tienes cuenta?, registrate para reservar habitación  -->
+  </div>
+  
+
+  <!-- <div id="message"></div> -->
+
+  <script src="../public/scripts.js"></script>
+</body>
+
+
+<ul class="vehilculosLista" id="vehilculosLista"></ul>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="../public/style_register.css">
+</head>
+<body>
+
+  <div class="menu">
+    <a href="./index.html">Inicio</a>
+    <a href="./habitaciones.html">Habitaciones</a>
+    <a href="#servicios">Servicios</a>
+    <a href="./contacto.html">Contacto</a>
+    <a href="./signIn.html">Reserva</a>
+    <a href="./agradecimiento.html">Agradecimientos</a>
+  </div>
+
+  <div id="inicio" class="inicio">
+    <h1>Inicia sesión para reservar la habitación</h1>
+  </div>
+  <div id="caracteristicas" class="caracteristicas">
+    <p><img src="../images/todo-incluido.png" class="icon" />Todo incluido</p>
+    <p><img src="../images/focos.png" class="icon" />Shows Nocturnos</p>
+    <p><img src="../images/nadando.png" class="icon" />Piscina</p>
+    <p>
+      <img src="../images/puesta-de-sol.png" class="icon" />Habitaciones vista
+      al mar
+    </p>
+  </div>
+
+  <div class="registerForm">
+  <h1>Registro de Usuario</h1>
+  <form id="registerForm">
+    <input type="text" id="first_name" placeholder="Primer nombre" required>
+    <br><input type="text" id="last_name" placeholder="Apellido" required>
+    <br><input type="email" id="email" placeholder="Correo electronico" required>
+    <br><input type="number" id="phone" placeholder="Telefono" required>
+    <br><input type="password" id="password" placeholder="Contraseña" required>
+    <br><select id="role" required hidden>
+      <option value="user">Usuario</option>
+      <!-- <option value="admin">Administrador</option> -->
+    </select>
+    <button type="submit">Registrar</button>
+    <a href="./signIn.html" class="boton">Iniciar sesión</a>      
+  </form>
+  </div>
+  <div id="message"></div>
+
+  <script src="../public/scripts.js"></script>
+</body>
+</html>
